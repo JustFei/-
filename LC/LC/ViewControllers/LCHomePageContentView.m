@@ -63,12 +63,10 @@
     [_headScrollView setContentOffset:CGPointMake((_page.currentPage + 1) * self.frame.size.width, 0) animated:YES];
 }
 
-
-
 #pragma mark - 设置定时器
 - (void)setNSTimer:(NSInteger)pageCount
 {
-    [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(offset) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(offset) userInfo:nil repeats:YES];
 }
 //定时器的偏移事件
 - (void)offset

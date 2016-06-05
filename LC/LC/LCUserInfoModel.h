@@ -20,6 +20,7 @@
 
 @property (nonatomic ,copy)NSString *unionId;
 
+//这下面的三个返回的信息并不是字符串，貌似是字典
 //@property (nonatomic ,copy)NSString *thirdPlatformUserProfile;
 
 //@property (nonatomic ,copy)NSString *thirdPlatformResponse;

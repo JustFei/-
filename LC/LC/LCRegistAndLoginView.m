@@ -104,9 +104,6 @@
             model.accessToken = snsAccount.accessToken;
             model.iconUrl = snsAccount.iconURL;
             model.unionId = snsAccount.unionId;
-            //model.thirdPlatformUserProfile = response.thirdPlatformUserProfile;
-            //model.thirdPlatformResponse = response.thirdPlatformResponse;
-            //model.message = response.message;
             
             if (_sinaUserInfoCallBcak) {
                 _sinaUserInfoCallBcak(model);

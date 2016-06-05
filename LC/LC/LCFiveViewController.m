@@ -96,7 +96,7 @@
     
     UIBarButtonItem *settingItem = [[UIBarButtonItem alloc] initWithCustomView:settingBtn];
     
-    //self.navigationItem.rightBarButtonItem = settingItem;
+    self.navigationItem.rightBarButtonItem = settingItem;
     
     self.navigationController.navigationBar.translucent = YES;
     UIColor *color = [UIColor clearColor];
@@ -128,6 +128,7 @@
 {
     //self.tabBarController.tabBar.hidden = YES;
     [UIView animateWithDuration:0.2 animations:^{
+        [self.tabBarController.view bringSubviewToFront:self.showRegistAndLoginView];
         self.showRegistAndLoginView.frame = CGRectMake(0, 0, kScreenBounds.size.width, kScreenBounds.size.height);
     }];
     NSLog(@"%@",NSStringFromCGRect(self.showRegistAndLoginView.frame));
