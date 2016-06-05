@@ -41,15 +41,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    //这里隐藏了搜索按钮
-    //UIBarButtonItem *leftBackBtn = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"btn_nav_search"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(search)];
+    UIBarButtonItem *leftBackBtn = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"btn_nav_search"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(search)];
     
-//    self.navigationItem.leftBarButtonItem = leftBackBtn;
+    self.navigationItem.leftBarButtonItem = leftBackBtn;
     
-    //这里隐藏了购物车按钮
-    //UIBarButtonItem *rightCatBtn = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"btn_cart"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(catBtn)];
+    UIBarButtonItem *rightCatBtn = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"btn_cart"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(catBtn)];
     
-    //self.navigationItem.rightBarButtonItem = rightCatBtn;
+    self.navigationItem.rightBarButtonItem = rightCatBtn;
     
     [self createUI];
     

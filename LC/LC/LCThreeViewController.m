@@ -30,13 +30,13 @@
     // Do any additional setup after loading the view from its nib.
     
     //搜索和更多的按钮暂时没有实现
-    //UIBarButtonItem *leftBackBtn = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"btn_nav_search"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(search)];
+    UIBarButtonItem *leftBackBtn = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"btn_nav_search"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(search)];
     
-    //self.navigationItem.leftBarButtonItem = leftBackBtn;
+    self.navigationItem.leftBarButtonItem = leftBackBtn;
     
-    //UIBarButtonItem *rightCatBtn = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"btn_nav_option"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(more)];
+    UIBarButtonItem *rightCatBtn = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"btn_nav_option"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(more)];
     
-    //self.navigationItem.rightBarButtonItem = rightCatBtn;
+    self.navigationItem.rightBarButtonItem = rightCatBtn;
     
     self.threeContentView.backgroundColor = [UIColor colorWithRed:35.0 / 255.0 green:38.0 / 255.0 blue:41.0 / 255.0 alpha:1];
     

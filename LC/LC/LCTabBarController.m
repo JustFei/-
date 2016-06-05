@@ -41,7 +41,7 @@
     //选中时图片
     NSArray *tabBarSelectImageNames = @[@"tabbar_shop_h",@"tabbar_special_h",@"tabbar_perfectware_h",@"tabbar_activity_h",@"tabbar_person_h"];
     
-    for (int index = 0; index<childControllerNames.count - 1; index ++) {
+    for (int index = 0; index<childControllerNames.count ; index ++) {
         //获取类名字符串
         NSString *className = childControllerNames[index];
         //创建对象
