@@ -1,0 +1,59 @@
+//
+//  DefinedFile.pch
+//  LC
+//
+//  Created by JustBill on 16/5/23.
+//  Copyright © 2016年 邢谢飞. All rights reserved.
+//
+
+#ifndef DefinedFile_pch
+#define DefinedFile_pch
+
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "MJRefresh.h"
+#import "UIButton+WebCache.h"
+
+//商店-首页的接口
+#define kHomePageUrl @"http://api.iliangcang.com/i/appshophome?app_key=iphone&build=170&osVersion=93&v=2.5.1"
+
+//商店-首页btn的接口
+#define kGoodsUrl @"http://api.iliangcang.com/i/appshopgoods?app_key=iphone&build=170&count=12&list_id=%@&osVersion=93&page=%ld&self_host=1&v=2.5.0"
+
+//商店-品牌的接口
+#define kBrandUrl @"http://iliangcang.com:8200/brand/list/2?app_key=iphone&build=170&offset=10&osVersion=93&start=%ld&v=2.5.0"
+
+//商店-品牌的子接口
+#define kBrandShowUrl @"http://mobile.iliangcang.com/brand/brandShopList?a=b&page=1&count=10&brand_id=%@&app_key=iPhone&v=3.0.0&sig=B7781DAC-4AD1-44D5-A5A6-B4F2BE5A622E"
+
+//商店-专题的接口
+#define kSubjectUrl @"http://api.iliangcang.com/i/appshopmaga?app_key=iphone&build=170&osVersion=93&v=2.5.0"
+
+//商店-商品详情的接口
+#define kGoodsIforUrl @"http://mobile.iliangcang.com/goods/goodsDetail?a=b&goods_id=%@&app_key=iPhone&v=3.0.0&sig=B7781DAC-4AD1-44D5-A5A6-B4F2BE5A622E"
+
+//所有杂志的接口
+#define kTwoUrl @"http://app.iliangcang.com/topic/listinfo?app_key=iphone&build=170&osVersion=93&v=2.5.0"
+
+//杂志-分类的接口
+#define kTwoCategoryUrl @"http://app.iliangcang.com/topic/listcat?app_key=iphone&build=170&osVersion=93&v=2.5.0"
+
+//杂志-分类-Sub的接口(改变cat_id后面的数字)
+#define kTwoCategorySubUrl @"http://app.iliangcang.com/topic/listinfo?app_key=iphone&build=170&cat_id=%@&osVersion=93&v=2.5.0"
+
+//杂志-作者的接口
+#define kTwoAuthorUrl @"http://app.iliangcang.com/topic/listauthor?app_key=iphone&build=170&osVersion=93&v=2.5.0"
+
+//杂志-作者-Sub的接口(改变author_id后面的数字)
+#define kTwoAuthorSubUrl @"http://app.iliangcang.com/topic/listinfo?app_key=iphone&author_id=%@&build=170&osVersion=93&v=2.5.0"
+
+//分享的接口(改变page后面的数字)
+#define kThreeUrl @"http://app.iliangcang.com/goods/class?app_key=iphone&build=170&count=12&osVersion=93&page=%ld&v=2.5.0"
+
+//达人的接口（改变page后面的数字）
+#define kFourUrl @"http://app.iliangcang.com/expert?app_key=iphone&build=170&count=12&osVersion=93&page=%ld&v=2.5.0"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* DefinedFile_pch */

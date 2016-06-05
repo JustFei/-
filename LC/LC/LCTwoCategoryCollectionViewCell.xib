@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LCTwoCategoryCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="133" height="95"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="133" height="95"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dKM-H5-2WP">
+                        <rect key="frame" x="0.0" y="0.0" width="133" height="95"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLO-RE-FwM">
+                        <rect key="frame" x="45" y="37" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h8l-Dq-eGV">
+                        <rect key="frame" x="25" y="37" width="15" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="zeP-Zf-Cqp"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="hLO-RE-FwM" firstAttribute="leading" secondItem="h8l-Dq-eGV" secondAttribute="trailing" constant="5" id="A1M-HA-rQc"/>
+                <constraint firstItem="hLO-RE-FwM" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Aob-FV-RBd"/>
+                <constraint firstAttribute="trailing" secondItem="dKM-H5-2WP" secondAttribute="trailing" id="J4u-0k-E0f"/>
+                <constraint firstItem="hLO-RE-FwM" firstAttribute="top" secondItem="h8l-Dq-eGV" secondAttribute="top" id="Tox-3W-Crh"/>
+                <constraint firstItem="hLO-RE-FwM" firstAttribute="bottom" secondItem="h8l-Dq-eGV" secondAttribute="bottom" id="Wql-MM-W2C"/>
+                <constraint firstItem="hLO-RE-FwM" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Yd4-ha-CXI"/>
+                <constraint firstItem="dKM-H5-2WP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="byA-f5-SHW"/>
+                <constraint firstItem="dKM-H5-2WP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gfS-HS-ppd"/>
+                <constraint firstAttribute="bottom" secondItem="dKM-H5-2WP" secondAttribute="bottom" id="y7P-mC-Ve4"/>
+            </constraints>
+            <connections>
+                <outlet property="iconImgView" destination="h8l-Dq-eGV" id="VBR-lt-RPf"/>
+                <outlet property="imgView" destination="dKM-H5-2WP" id="9r8-39-S2e"/>
+                <outlet property="titleLabel" destination="hLO-RE-FwM" id="Xca-LL-Bpx"/>
+            </connections>
+            <point key="canvasLocation" x="579.5" y="294.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

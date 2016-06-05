@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="LCBrandTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d80-NP-Iac">
+                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="9vQ-A6-flx"/>
+                            <constraint firstAttribute="width" constant="50" id="Aeo-FH-Hbi"/>
+                            <constraint firstAttribute="height" constant="50" id="YGl-t9-MKI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Aeo-FH-Hbi"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHg-U2-YRH">
+                        <rect key="frame" x="66" y="25.5" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.6588235294117647" green="0.6588235294117647" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fHg-U2-YRH" firstAttribute="leading" secondItem="d80-NP-Iac" secondAttribute="trailing" constant="8" id="2Sl-Wz-TFK"/>
+                    <constraint firstItem="d80-NP-Iac" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="4Ed-0r-pOS"/>
+                    <constraint firstItem="d80-NP-Iac" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="D4i-AG-5Xt"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="d80-NP-Iac" secondAttribute="bottom" id="IKn-Lp-zsS"/>
+                    <constraint firstItem="fHg-U2-YRH" firstAttribute="leading" secondItem="d80-NP-Iac" secondAttribute="trailing" constant="8" id="Oaj-0H-HFt"/>
+                    <constraint firstItem="fHg-U2-YRH" firstAttribute="leading" secondItem="d80-NP-Iac" secondAttribute="trailing" constant="8" id="TqX-ag-GsT"/>
+                    <constraint firstItem="fHg-U2-YRH" firstAttribute="centerY" secondItem="d80-NP-Iac" secondAttribute="centerY" id="Uyb-1T-ecb"/>
+                    <constraint firstItem="d80-NP-Iac" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="XKU-ei-Pt5"/>
+                    <constraint firstItem="d80-NP-Iac" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="feM-IF-F92"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="4Ed-0r-pOS"/>
+                        <exclude reference="IKn-Lp-zsS"/>
+                        <exclude reference="feM-IF-F92"/>
+                        <exclude reference="Oaj-0H-HFt"/>
+                        <exclude reference="TqX-ag-GsT"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="fHg-U2-YRH" id="BO0-wL-9Sq"/>
+                <outlet property="imgView" destination="d80-NP-Iac" id="8n2-g0-zWi"/>
+            </connections>
+            <point key="canvasLocation" x="479" y="515.5"/>
+        </tableViewCell>
+    </objects>
+</document>

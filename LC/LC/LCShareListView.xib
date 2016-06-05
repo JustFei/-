@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LCShareListView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qD-Of-XfR">
+                    <rect key="frame" x="192" y="23" width="38" height="38"/>
+                    <state key="normal" image="loginSinaWeibo"/>
+                    <connections>
+                        <action selector="sinaWeiboShareButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="TPT-XW-gIe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvQ-T7-4H2">
+                    <rect key="frame" x="90" y="23" width="38" height="38"/>
+                    <state key="normal" image="loginTencentQQ"/>
+                    <connections>
+                        <action selector="qqShareButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="0fG-NS-A57"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DvQ-T7-4H2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="23" id="C1D-2R-pRU"/>
+                <constraint firstItem="4qD-Of-XfR" firstAttribute="width" secondItem="DvQ-T7-4H2" secondAttribute="width" id="RCj-Kf-Cbe"/>
+                <constraint firstItem="DvQ-T7-4H2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="90" id="Wuu-Ci-VjC"/>
+                <constraint firstItem="4qD-Of-XfR" firstAttribute="height" secondItem="DvQ-T7-4H2" secondAttribute="height" id="XzH-Dh-Fe9"/>
+                <constraint firstItem="4qD-Of-XfR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="23" id="qsG-1L-Axd"/>
+                <constraint firstAttribute="trailing" secondItem="4qD-Of-XfR" secondAttribute="trailing" constant="90" id="wsd-qJ-R3h"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="299" y="41"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loginSinaWeibo" width="38" height="38"/>
+        <image name="loginTencentQQ" width="38" height="38"/>
+    </resources>
+</document>
